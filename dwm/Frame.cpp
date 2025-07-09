@@ -111,7 +111,7 @@ void DrawImGui() {
 
 bool InitPresentMultiplaneOverlay() {
 
-	// ÐéÄâ»ú Windows 11 23H2 --> DrawingContext::PresentDWM
+	// è™šæ‹Ÿæœº Windows 11 23H2 --> DrawingContext::PresentDWM
 	// #  Call Site
 	// 00 d2d1!DrawingContext::PresentDWM
 	// 01 d2d1!D2DDeviceContextBase<ID2D1BitmapRenderTarget, ID2D1BitmapRenderTarget, ID2D1DeviceContext7>::PresentDWM + 0xc9
@@ -131,7 +131,7 @@ bool InitPresentMultiplaneOverlay() {
 
 	// ------------------------------------------------------------------------------------------
 
-	// ÎïÀí»ú Windows 11 23H2 --> DrawingContext::PresentMultiplaneOverlay
+	// ç‰©ç†æœº Windows 11 23H2 --> DrawingContext::PresentMultiplaneOverlay
 
 	auto ModuleAddress = reinterpret_cast<unsigned __int64>(GetModuleHandleA("d2d1.dll"));
 	if (!ModuleAddress) {
