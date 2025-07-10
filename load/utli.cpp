@@ -83,8 +83,6 @@ DWORD GetProcessIdByName(std::wstring ProcessName) {
 
 			if (!std::wstring(ProcessInformation->ImageName.Buffer).compare(ProcessName)) {
 
-				ZwFreeVirtualMemory(GetCurrentProcess(), reinterpret_cast<void**>(&ProcessInformation), nullptr, MEM_RELEASE);
-
 				return HandleToULong(ProcessInformation->ProcessId);
 			}
 		}
