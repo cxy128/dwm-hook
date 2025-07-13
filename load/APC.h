@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Windows.h>
-#include "utli.h"
+#include "util.h"
 
 typedef void* (*fnLoadLibraryA)(const char* lpLibFileName);
 typedef unsigned __int64 (*fnGetProcAddress)(void* hModule, const char* lpProcName);
